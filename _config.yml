@@ -3,8 +3,8 @@ description: Backend-leaning full-stack engineer. Projects and a public learning
 url: https://manvtish.github.io
 author: Manish Roy
 github_username: ManVTish
-linkedin_url: ""        # add your LinkedIn URL
-resume_url: ""          # e.g. /assets/resume.pdf
+linkedin_url: https://www.linkedin.com/in/rmanishankar        # add your LinkedIn URL
+resume_url: https://github.com/ManVTish/repho/blob/main/resume_manishroy_v3.docx          # e.g. /assets/resume.pdf
 permalink: /blog/:year/:month/:title/
 plugins:
   - jekyll-feed

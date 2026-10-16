@@ -3,8 +3,8 @@ layout: default
 title: Manish Roy
 ---
 <section class="intro">
-  <h1>I build backend systems and write down what I learn.</h1>
-  <p>Full-stack engineer based in Pune, mostly Ruby on Rails, currently going deep on LLMs, RAG and agents. This site has the projects I'm proudest of and a log of what I'm learning.</p>
+  <h1>I build systems and write stuff</h1>
+  <p>Full-stack engineer based in Pune, mostly Ruby on Rails, currently going deep on LLMs, RAG and agents. This site has the projects I work, learn, explore about and a log of what I'm learning.</p>
 </section>
 
 <section>
