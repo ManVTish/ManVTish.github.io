@@ -1,0 +1,23 @@
+# Replace these placeholders with your real projects.
+# featured: true shows the project on the home page.
+- name: Project one
+  summary: One sentence on the problem it solves and who it is for.
+  role: What you built and decided.
+  stack: Ruby on Rails, PostgreSQL, Redis
+  repo: https://github.com/ManVTish/project-one
+  demo: ""
+  featured: true
+- name: Project two
+  summary: One sentence on the problem it solves and who it is for.
+  role: What you built and decided.
+  stack: Python, FastAPI, pgvector
+  repo: https://github.com/ManVTish/project-two
+  demo: ""
+  featured: true
+- name: Project three
+  summary: One sentence on the problem it solves and who it is for.
+  role: What you built and decided.
+  stack: TypeScript, MCP
+  repo: https://github.com/ManVTish/project-three
+  demo: ""
+  featured: true

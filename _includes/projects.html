@@ -1,0 +1,10 @@
+<ul class="projects">
+{% for p in site.data.projects %}{% if include.featured_only != true or p.featured %}
+  <li>
+    <h3>{{ p.name }}</h3>
+    <p>{{ p.summary }}</p>
+    <p class="detail">{{ p.role }} Built with {{ p.stack }}.</p>
+    <p class="links"><a href="{{ p.repo }}">Source</a>{% if p.demo != "" %} <a href="{{ p.demo }}">Live demo</a>{% endif %}</p>
+  </li>
+{% endif %}{% endfor %}
+</ul>

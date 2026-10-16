@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <a class="name" href="{{ '/' | relative_url }}">Manish Roy</a>
+    <nav>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/blog/' | relative_url }}">Learning log</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+    </nav>
+  </header>
+  <main id="main">{{ content }}</main>
+  <footer>
+    <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    {% if site.linkedin_url != "" %}<a href="{{ site.linkedin_url }}">LinkedIn</a>{% endif %}
+    {% if site.resume_url != "" %}<a href="{{ site.resume_url | relative_url }}">Resume</a>{% endif %}
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+  </footer>
+</body>
+</html>

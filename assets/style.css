@@ -1,0 +1,45 @@
+:root{
+  --bg:#EEF1F5; --text:#16202E; --muted:#556275; --line:#CBD3DE; --accent:#1F4FD8;
+  --sans:"IBM Plex Sans",system-ui,sans-serif; --serif:"Literata",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#10151D; --text:#E3E8EF; --muted:#9AA7B8; --line:#2A3443; --accent:#8CA9FF;}
+}
+*{box-sizing:border-box}
+html{font-size:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.6 var(--sans);
+  padding:0 1.25rem env(safe-area-inset-bottom,0)}
+body>*{max-width:42rem;margin-left:auto;margin-right:auto}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:1rem;top:1rem;background:var(--bg);padding:.5rem}
+.top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem 1.5rem;
+  padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.name{font-weight:600;color:var(--text);text-decoration:none}
+.top nav{display:flex;gap:1.25rem}
+.top nav a{color:var(--muted);text-decoration:none}
+.top nav a:hover{color:var(--accent)}
+main{padding:2.5rem 0}
+h1{font-size:clamp(1.75rem,5vw,2.4rem);line-height:1.2;letter-spacing:-.02em;margin:0 0 1rem;font-weight:600}
+h2{font-size:1.15rem;margin:3rem 0 1rem;font-weight:600}
+h3{font-size:1.05rem;margin:0 0 .25rem;font-weight:600}
+.intro{margin-bottom:1rem}
+.intro p,.lede{font-family:var(--serif);font-size:1.15rem;color:var(--muted);max-width:36rem}
+.projects,.posts{list-style:none;margin:0;padding:0}
+.projects li{padding:1.25rem 0;border-top:1px solid var(--line)}
+.projects li:last-child{border-bottom:1px solid var(--line)}
+.projects p{margin:.2rem 0}
+.projects .detail{color:var(--muted);font-size:.95rem}
+.links a{margin-right:1rem}
+.posts li{display:flex;flex-wrap:wrap;gap:.1rem 1rem;padding:.6rem 0;border-top:1px solid var(--line)}
+.posts li:last-child{border-bottom:1px solid var(--line)}
+.posts .date,.tags,.meta{color:var(--muted);font-size:.9rem}
+.posts .date{margin-left:auto}
+.tags{flex-basis:100%}
+.prose,.post .prose{font-family:var(--serif);font-size:1.1rem;line-height:1.75;max-width:38rem}
+.prose pre{overflow-x:auto;padding:1rem;border:1px solid var(--line);font-size:.9rem;line-height:1.5}
+.prose code{font-size:.9em}
+.prose img{max-width:100%;height:auto}
+footer{display:flex;gap:1.25rem;flex-wrap:wrap;padding:1.5rem 0 2.5rem;border-top:1px solid var(--line);font-size:.95rem}
+footer a{color:var(--muted)}
